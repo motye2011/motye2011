@@ -112,3 +112,59 @@ a:hover {
     color: var(--accent);
     transform: translateY(-2px);
 }
+
+#imagen img {
+    width: 100%;
+    max-width: 500px;
+    border-radius: 12px;
+    border: 1px solid var(--border);
+    display: block;
+    margin-top: 0.5rem;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+}
+
+#proyectos h2 a {
+    color: var(--accent-2);
+    border-bottom: none;
+}
+
+#proyectos h2 a::after {
+    content: " \2192";
+}
+
+#proyectos h2 a:hover {
+    color: var(--accent);
+}
+
+table {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    border-collapse: collapse;
+    background-color: var(--bg-card);
+    border: 1px solid var(--border);
+    overflow: hidden;
+}
+
+th,
+td {
+    padding: 0.9rem 1.2rem;
+    text-align: left;
+    border-bottom: 1px solid var(--border);
+}
+
+th {
+    background-color: var(--accent);
+    color: #0f172a;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 0.85rem;
+}
+
+tr:nth-child(odd) td {
+    background-color: rgba(255, 255, 255, 0.02);
+}
+
+tr:hover td {
+    background-color: rgba(56, 189, 248, 0.08);
+}
