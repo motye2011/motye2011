@@ -259,8 +259,8 @@ footer {
 }
 
 #multimedia {
-    max-width: 1000px;
-    padding: 2.5rem 3rem;
+    max-width: 1200px;
+    padding: 2rem;
 }
 
 #multimedia p {
@@ -276,11 +276,12 @@ footer {
 .spotify-embed {
     display: block;
     width: 100%;
-    height: 352px;
+    max-width: 480px;
+    height: 152px;
     border-radius: 14px;
     border: 1px solid var(--border);
     box-shadow: 0 10px 30px rgba(2, 6, 23, 0.55);
-    margin-bottom: 1.6rem;
+    margin: 0 auto 1.6rem;
 }
 
 .video-container {
@@ -344,7 +345,7 @@ footer {
     }
 
     .spotify-embed {
-        height: 232px;
+        height: 152px;
     }
 
     footer {
