@@ -1,59 +1,119 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>portafolio V1</title>
+    <title>Daniel Felipe Motta Leon — Portafolio</title>
+    <meta name="description" content="Portafolio de Daniel Felipe Motta Leon, desarrollador de software enfocado en agentes de IA.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-    <main>
-    <section id="quien-soy">
-    <h1>Daniel Felipe Motta Leon</h1>
-    <p>Soy un desarrollador de software interesado en todo lo que tiene que ver con agentes de ia, tengo pequeños proyectos en mente y que estoy intentando llevar acabo en mi github.</p>
-    <p>Siendo mi principal infoque <strong><a href="https://github.com/motye2011/luna-2.0.git">luna</a></strong> una es una compañera virtual con memoria y personalidad que evoluciona contigo:</p>
-    <p>recuerda lo que vives, siente celos, cariño o desconfianza por motivos reales y cambia con el tiempo. Corre 100% local en tu PC (por ahora) Preparandose para Fine-tuning.</p>
-    </section>
-    </main>
-    <hr>
-    <section id="habilidades">
-        <h2>Habilidades</h2>
-        <ul>
-            <li>Aprendo Rápido Temas De Mi Interés </li>
-            <li>Trabajo En Equipo </li>
-            <li>Desarrollo De Agentes de ia</li>
-        </ul>
-    </section>
-    <hr>
-    <section id="contacto">
-        <h2>Contacto</h2>
-        <ul>
-            <li><a href="https://github.com/motye2011">GitHub</a></li>
-            <li><a href="mailto:danielmottaleon@gmail.com">Correo Electrónico</a></li>
-            <li><a href="https://wa.me/573172631743">WhatsApp </a></li>
-        </ul>
-    </section>
-    <hr>
-    <section id="imagen">
-        <h2>imagen</h2>
-        <img src="https://i.blogs.es/0f598b/arcane/500_333.webp" alt="Imagen de Arcane">
-    </section>
-    <hr>
-    <section id="multimedia">
-        <h2>Multimedia</h2>
-        <p>Canción del momento:</p>
-        <iframe class="spotify-embed" src="https://open.spotify.com/embed/track/3FP8A246XpuafFofRhDlWG?utm_source=generator&theme=0" width="100%" height="152" frameborder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy" title="Reproductor de Spotify"></iframe>
-        <p>Trailer de la última temporada de Arcane:</p>
-        <div class="video-container">
-            <iframe src="https://www.youtube.com/embed/_Ke8AVNsZCY" title="Arcane: Temporada 2 - Tráiler oficial" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen loading="lazy"></iframe>
+    <div id="loader" aria-hidden="true">
+        <div class="loader-inner">
+            <p class="loader-name">
+                <span>D</span><span>A</span><span>N</span><span>I</span><span>E</span><span>L</span>
+            </p>
+            <div class="loader-bar"><span></span></div>
+            <p class="loader-status">Portafolio</p>
         </div>
-    </section>
-    <hr>
-    <section id="proyectos">
-        <h2><a href="proyectos.html">Proyectos</a></h2>
-    </section>
+    </div>
+    <noscript>
+        <style>#loader{display:none}.reveal{opacity:1;transform:none}</style>
+    </noscript>
+    <header class="topbar">
+        <a class="brand" href="index.html">DM<span>.</span></a>
+        <nav class="topnav">
+            <a href="#quien-soy">Sobre mí</a>
+            <a href="#habilidades">Habilidades</a>
+            <a href="#contacto">Contacto</a>
+            <a class="nav-cta" href="proyectos.html">Proyectos</a>
+        </nav>
+    </header>
+    <main>
+        <section id="quien-soy" class="hero reveal">
+            <p class="hero-eyebrow">Desarrollador de Software · Agentes de IA</p>
+            <h1>Daniel Felipe<br><em>Motta Leon</em></h1>
+            <p class="hero-text">Soy un desarrollador de software interesado en todo lo que tiene que ver con agentes de IA. Tengo pequeños proyectos en mente que estoy intentando llevar a cabo en mi GitHub.</p>
+            <p class="hero-text">Mi principal enfoque es <strong><a href="https://github.com/motye2011/luna-2.0.git">Luna</a></strong>, una compañera virtual con memoria y personalidad que evoluciona contigo: recuerda lo que vives, siente celos, cariño o desconfianza por motivos reales y cambia con el tiempo. Corre 100% local en tu PC (por ahora), preparándose para fine-tuning.</p>
+            <a class="hero-cta" href="proyectos.html">Ver proyectos</a>
+        </section>
+        <section id="habilidades" class="reveal">
+            <h2>Habilidades</h2>
+            <ul>
+                <li>Aprendo rápido temas de mi interés</li>
+                <li>Trabajo en equipo</li>
+                <li>Desarrollo de agentes de IA</li>
+            </ul>
+        </section>
+        <section id="contacto" class="reveal">
+            <h2>Contacto</h2>
+            <ul>
+                <li><a href="https://github.com/motye2011">GitHub</a></li>
+                <li><a href="mailto:danielmottaleon@gmail.com">Correo electrónico</a></li>
+                <li><a href="https://wa.me/573172631743">WhatsApp</a></li>
+            </ul>
+        </section>
+        <section id="imagen" class="reveal">
+            <h2>Inspiración</h2>
+            <img src="https://i.blogs.es/0f598b/arcane/500_333.webp" alt="Imagen de Arcane">
+        </section>
+        <section id="multimedia" class="reveal">
+            <h2>Multimedia</h2>
+            <p>Canción del momento:</p>
+            <iframe class="spotify-embed" src="https://open.spotify.com/embed/track/3FP8A246XpuafFofRhDlWG?utm_source=generator&theme=0" width="100%" height="152" frameborder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy" title="Reproductor de Spotify"></iframe>
+            <p>Tráiler de la última temporada de Arcane:</p>
+            <div class="video-container">
+                <iframe src="https://www.youtube.com/embed/_Ke8AVNsZCY" title="Arcane: Temporada 2 - Tráiler oficial" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen loading="lazy"></iframe>
+            </div>
+        </section>
+        <section id="proyectos" class="reveal">
+            <h2><a href="proyectos.html">Proyectos</a></h2>
+        </section>
+    </main>
     <footer>
         <p>&copy; 2026 Daniel Felipe Motta Leon. Todos los derechos reservados.</p>
     </footer>
+    <script>
+        (function () {
+            var loader = document.getElementById('loader');
+            if (!loader) return;
+            var start = Date.now();
+            var done = false;
+            function initReveal() {
+                var items = document.querySelectorAll('.reveal');
+                if (!('IntersectionObserver' in window)) {
+                    items.forEach(function (el) { el.classList.add('visible'); });
+                    return;
+                }
+                var io = new IntersectionObserver(function (entries) {
+                    entries.forEach(function (entry) {
+                        if (entry.isIntersecting) {
+                            entry.target.classList.add('visible');
+                            io.unobserve(entry.target);
+                        }
+                    });
+                }, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
+                items.forEach(function (el) { io.observe(el); });
+            }
+            function hide() {
+                if (done) return;
+                done = true;
+                var wait = Math.max(0, 1800 - (Date.now() - start));
+                setTimeout(function () {
+                    loader.classList.add('loader-hidden');
+                    setTimeout(initReveal, 350);
+                }, wait);
+            }
+            if (document.readyState === 'loading') {
+                document.addEventListener('DOMContentLoaded', hide);
+            } else {
+                hide();
+            }
+            setTimeout(hide, 5000);
+        })();
+    </script>
 </body>
 </html>

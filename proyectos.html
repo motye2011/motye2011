@@ -1,38 +1,112 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Proyectosg</title>
+    <title>Proyectos — Daniel Felipe Motta Leon</title>
+    <meta name="description" content="Proyectos de Daniel Felipe Motta Leon: Luna, portafolio y más.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-    <main>  
-     <table>
-        <tr>
-            <th>Proyecto</th>
-            <th>Descripción</th>
-            <th>Enlace</th>
-        </tr>
-        <tr>
-            <td>Luna</td>
-            <td>Compañera virtual con memoria y personalidad que evoluciona contigo.</td>
-            <td><a href="https://github.com/motye2011/luna-2.0.git">GitHub</a></td>
-        </tr>
-        <tr>
-            <td>Portafolio</td>
-            <td>Trabajo de portafolio v1.</td>
-            <td><a href="https://github.com/motye2011/Portafolio-V1">GitHub</a></td>
-        </tr>
-        <tr>
-            <td>Trabajo Pag.Viajes</td>
-            <td>Actividad de HTML pagina de viajes.</td>
-            <td><a href="https://github.com/motye2011/viaje">GitHub</a></td>
-        </tr>
-    </table>
+    <div id="loader" aria-hidden="true">
+        <div class="loader-inner">
+            <p class="loader-name">
+                <span>P</span><span>R</span><span>O</span><span>Y</span><span>E</span><span>C</span><span>T</span><span>O</span><span>S</span>
+            </p>
+            <div class="loader-bar"><span></span></div>
+            <p class="loader-status">Portafolio</p>
+        </div>
+    </div>
+    <noscript>
+        <style>#loader{display:none}.reveal{opacity:1;transform:none}</style>
+    </noscript>
+    <header class="topbar">
+        <a class="brand" href="index.html">DM<span>.</span></a>
+        <nav class="topnav">
+            <a href="index.html">Inicio</a>
+            <a href="index.html#quien-soy">Sobre mí</a>
+            <a href="index.html#contacto">Contacto</a>
+            <a class="nav-cta" href="proyectos.html">Proyectos</a>
+        </nav>
+    </header>
+    <main>
+        <section class="hero page-head reveal">
+            <p class="hero-eyebrow">Portafolio</p>
+            <h1>Proyectos</h1>
+        </section>
+        <section class="reveal">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Proyecto</th>
+                        <th>Descripción</th>
+                        <th>Enlace</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Luna</td>
+                        <td>Compañera virtual con memoria y personalidad que evoluciona contigo.</td>
+                        <td><a href="https://github.com/motye2011/luna-2.0.git">GitHub</a></td>
+                    </tr>
+                    <tr>
+                        <td>Portafolio</td>
+                        <td>Trabajo de portafolio v1.</td>
+                        <td><a href="https://github.com/motye2011/Portafolio-V1">GitHub</a></td>
+                    </tr>
+                    <tr>
+                        <td>Trabajo Pag.Viajes</td>
+                        <td>Actividad de HTML página de viajes.</td>
+                        <td><a href="https://github.com/motye2011/viaje">GitHub</a></td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
     </main>
     <footer>
-        <p>© 2026 Motye. Todos los derechos reservados.</p>
+        <p>&copy; 2026 Motye. Todos los derechos reservados.</p>
     </footer>
+    <script>
+        (function () {
+            var loader = document.getElementById('loader');
+            if (!loader) return;
+            var start = Date.now();
+            var done = false;
+            function initReveal() {
+                var items = document.querySelectorAll('.reveal');
+                if (!('IntersectionObserver' in window)) {
+                    items.forEach(function (el) { el.classList.add('visible'); });
+                    return;
+                }
+                var io = new IntersectionObserver(function (entries) {
+                    entries.forEach(function (entry) {
+                        if (entry.isIntersecting) {
+                            entry.target.classList.add('visible');
+                            io.unobserve(entry.target);
+                        }
+                    });
+                }, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
+                items.forEach(function (el) { io.observe(el); });
+            }
+            function hide() {
+                if (done) return;
+                done = true;
+                var wait = Math.max(0, 1800 - (Date.now() - start));
+                setTimeout(function () {
+                    loader.classList.add('loader-hidden');
+                    setTimeout(initReveal, 350);
+                }, wait);
+            }
+            if (document.readyState === 'loading') {
+                document.addEventListener('DOMContentLoaded', hide);
+            } else {
+                hide();
+            }
+            setTimeout(hide, 5000);
+        })();
+    </script>
 </body>
 </html>
