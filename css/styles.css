@@ -404,11 +404,6 @@ footer::before {
     margin: 0 auto 1.2rem;
 }
 
-#multimedia {
-    max-width: 1040px;
-    padding: 2.2rem 2.4rem;
-}
-
 #multimedia p {
     margin-top: 0.7rem;
     margin-bottom: 0.7rem;
@@ -422,12 +417,11 @@ footer::before {
 .spotify-embed {
     display: block;
     width: 100%;
-    max-width: 480px;
     height: 152px;
     border-radius: 16px;
     border: 1px solid var(--line);
     box-shadow: var(--shadow-sm);
-    margin: 0 auto 1.6rem;
+    margin: 0 0 1.6rem;
 }
 
 .video-container {
