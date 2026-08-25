@@ -168,3 +168,50 @@ tr:nth-child(odd) td {
 tr:hover td {
     background-color: rgba(56, 189, 248, 0.08);
 }
+
+hr {
+    display: none;
+}
+
+section + section,
+#habilidades,
+#contacto,
+#imagen,
+#proyectos {
+    margin-top: 1.2rem;
+}
+
+footer {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 0 2rem;
+    text-align: center;
+    color: var(--text-muted);
+    font-size: 0.9rem;
+    border-top: 1px solid var(--border);
+    padding-top: 1.2rem;
+}
+
+@media (max-width: 600px) {
+    section {
+        margin-left: 1rem;
+        margin-right: 1rem;
+        padding: 1.5rem;
+        border-radius: 10px;
+    }
+
+    #quien-soy {
+        margin-top: 1rem;
+    }
+
+    table {
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+
+    th,
+    td {
+        padding: 0.7rem 0.9rem;
+    }
+}
