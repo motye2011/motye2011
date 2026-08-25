@@ -57,3 +57,28 @@ p {
 strong {
     color: var(--text);
 }
+
+#quien-soy {
+    margin-top: 2rem;
+    padding: 2.5rem 2.5rem;
+}
+
+#quien-soy h1 {
+    margin-bottom: 1rem;
+}
+
+#quien-soy p:first-of-type {
+    font-size: 1.05rem;
+}
+
+a {
+    color: var(--accent);
+    text-decoration: none;
+    border-bottom: 1px solid transparent;
+    transition: color 0.2s ease, border-color 0.2s ease;
+}
+
+a:hover {
+    color: var(--accent-2);
+    border-color: var(--accent-2);
+}
